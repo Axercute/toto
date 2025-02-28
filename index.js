@@ -28,11 +28,11 @@ function generateNumber(oldNumber) {
 // Event listener for the "generate" button
 document.querySelector('#submit').addEventListener('click', () => {
     const oldNumber = []; // Reset the array for each generation
-    const systemNumber = parseInt(askNumber.value, 10); // Get the system number
+    const systemNumber = parseInt(askNumber.value); // Get the system number
 
     // Validate the system number
-    if (isNaN(systemNumber) || systemNumber < 7 || systemNumber > 12) {
-        alert("Please enter a number between 7 and 12.");
+    if (isNaN(systemNumber) || systemNumber < 6 || systemNumber > 12) {
+        alert("Please enter a number between 6 and 12.");
         return;
     }
 
